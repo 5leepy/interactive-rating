@@ -76,45 +76,89 @@ body {
 .card__content {
   padding: 1.5rem;
 }
+@media (min-width: 600px) {
+  .card__content {
+    padding: 1.875rem;
+  }
+}
 .card__content.bottom {
   text-align: center;
 }
 .card__content.bottom img {
-  margin: 12px auto 24px;
+  margin: 0.75rem auto 1.5rem;
+}
+@media (min-width: 600px) {
+  .card__content.bottom img {
+    margin-bottom: 2.375rem;
+  }
 }
 .card__content.bottom span.select {
   color: hsl(25deg, 97%, 53%);
   background-color: #303a46;
-  padding: 7px 10px 3px;
+  padding: 0.4375rem 0.625rem 0.1875rem;
   border-radius: 3rem;
 }
 .card__content.bottom h1 {
-  margin: 19px 0 10px;
+  margin: 1.1875rem 0 0.625rem;
 }
 .card__content.bottom p {
   color: hsl(216deg, 12%, 54%);
   font-weight: 400;
 }
+@media (min-width: 600px) {
+  .card__content.bottom span, .card__content.bottom p {
+    font-size: 1rem;
+  }
+  .card__content.bottom h1 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
 .card__img.top {
-  height: 40px;
-  width: 40px;
-  max-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  max-width: 2.5rem;
   border-radius: 50%;
-  padding: 12px;
+  padding: 0.75rem;
   background: #303a46;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+}
+@media (min-width: 600px) {
+  .card__img.top {
+    height: 3.125rem;
+    width: 3.125rem;
+    max-width: 3.125rem;
+    margin-bottom: 2rem;
+  }
+}
+.card__img.top img {
+  max-height: 1rem;
 }
 .card__title {
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media (min-width: 600px) {
+  .card__title {
+    font-size: 1.75rem;
+  }
 }
 .card__text {
-  margin: 8px 0 30px;
+  margin: 0.5rem 0 1.875rem;
   color: hsl(217deg, 12%, 63%);
   font-weight: 400;
   font-size: 14px;
 }
+@media (min-width: 600px) {
+  .card__text {
+    font-size: 1rem;
+  }
+}
 .card ul {
-  margin: 0 0 24px;
+  margin: 0 0 1.5rem;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -144,11 +188,18 @@ body {
 .card ul li .btn:active {
   background-color: hsl(217deg, 12%, 63%);
 }
+@media (min-width: 600px) {
+  .card ul li .btn {
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1rem;
+  }
+}
 .card__button {
   width: 100%;
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
-  padding: 12px 0 8px;
+  padding: 0.75rem 0 0.5rem;
   border-radius: 1.5rem;
   font-weight: 700;
   font-size: 14px;
@@ -160,6 +211,11 @@ body {
 .card__button:hover {
   color: hsl(25deg, 97%, 53%);
   background-color: hsl(0deg, 0%, 100%);
+}
+@media (min-width: 600px) {
+  .card__button {
+    font-size: 1rem;
+  }
 }
 
 .hidden {
