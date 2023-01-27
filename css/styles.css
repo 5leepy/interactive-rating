@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+svg,
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 8%);
+  display: grid;
+  place-items: center;
+  margin: 0 1.5rem;
+}
+
+.card {
+  background: radial-gradient(circle at 50% 0%, hsl(213deg, 19%, 18%), #171c21);
+  border-radius: 14px;
+  max-width: 412px;
+  box-shadow: 0px 5px 15px -5px #070709;
+}
+.card__content {
+  padding: 1.5rem;
+}
+.card__content.bottom {
+  text-align: center;
+}
+.card__content.bottom img {
+  margin: 12px auto 24px;
+}
+.card__content.bottom span.select {
+  color: hsl(25deg, 97%, 53%);
+  background-color: #303a46;
+  padding: 7px 10px 3px;
+  border-radius: 3rem;
+}
+.card__content.bottom h1 {
+  margin: 19px 0 10px;
+}
+.card__content.bottom p {
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 400;
+}
+.card__img.top {
+  height: 40px;
+  width: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  background: #303a46;
+  margin-bottom: 18px;
+}
+.card__title {
+  font-size: 24px;
+}
+.card__text {
+  margin: 8px 0 30px;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+  font-size: 14px;
+}
+.card ul {
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.card ul li {
+  list-style: none;
+}
+.card ul li .btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 50%;
+  padding-top: 0.2rem;
+  background-color: #303a46;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.card ul li .btn:hover {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.card ul li .btn:focus {
+  background-color: hsl(217deg, 12%, 63%);
+}
+.card ul li .btn:active {
+  background-color: hsl(217deg, 12%, 63%);
+}
+.card__button {
+  width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  padding: 12px 0 8px;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.card__button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

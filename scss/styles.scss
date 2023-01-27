@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$primary:hsl(25, 97%, 53%);
+$neutral-100:hsl(0, 0%, 100%);
+$neutral-300:hsl(217, 12%, 63%);
+$neutral-500:hsl(216, 12%, 54%);
+$neutral-700:hsl(213, 19%, 18%);
+$neutral-900:hsl(216, 12%, 8%);
+
+$fs-text:14px;
+$fw-regular:400;
+$fw-bold:700;
+
+$ff-primary:'Overpass', sans-serif;
+
+// https://piccalil.li/blog/a-modern-css-reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+svg,
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    font-family: $ff-primary;
+    font-weight: $fw-regular;
+    font-size: $fs-text;
+    color: $neutral-100;
+    background-color: $neutral-900;
+    display: grid;
+    place-items: center;
+    margin: 0 1.5rem;
+}
+
+
+
+.card {
+    background:radial-gradient(circle at 50% 0%,  $neutral-700, darken($neutral-700, 7%));
+    border-radius: $fs-text;
+    max-width: 412px;
+    box-shadow: 0px 5px 15px -5px darken($neutral-900, 5%);
+    &__content {
+        padding: 1.5rem;
+    }
+    &__content.bottom{
+        text-align: center;
+        img{
+            margin: 12px auto 24px;
+
+        }
+        span.select {
+            color:$primary;
+            background-color: lighten($neutral-700, 5%);
+            padding: 7px 10px 3px;
+            border-radius: 3rem;
+        }
+        h1 {
+            margin: 19px 0 10px;
+        }
+        p {
+            color: $neutral-500;
+            font-weight: $fw-regular;
+        }
+
+    }
+    &__img.top {
+        height: 40px;
+        width: 40px;
+        max-width: 40px;
+        border-radius: 50%;
+        padding: 12px;
+        background:lighten($neutral-700, 5%);
+        margin-bottom: 18px;
+    }
+    &__title {
+        font-size: 24px;
+    }
+    &__text {
+        margin: 8px 0 30px;
+        color: $neutral-300;
+        font-weight: $fw-regular;
+        font-size: $fs-text;
+    }
+    ul {
+        margin: 0 0 24px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            list-style: none;
+            .btn {
+                width: 2.5rem;
+                height: 2.5rem;
+                color: $neutral-100;
+                border: none;
+                border-radius: 50%;
+                padding-top: 0.2rem;
+                background-color: lighten($neutral-700, 5%);
+                cursor: pointer;
+                transition: .2s ease-in-out;
+                &:hover {
+                    background-color: $primary;
+                }
+                &:focus {
+                    background-color: $neutral-300;
+                }
+                &:active {
+                    background-color: $neutral-300;
+                }
+            }
+        }
+    }
+    &__button {
+        width: 100%;
+        color: $neutral-100;
+        background-color: $primary;
+        padding: 12px 0 8px;
+        border-radius: 1.5rem;
+        font-weight: $fw-bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: .2s ease-in;
+        &:hover {
+            color: $primary;
+            background-color: $neutral-100;
+        }
+    }
+}
+
+
+
+.hidden {
+    display: none;
+}
