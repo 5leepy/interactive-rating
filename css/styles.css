@@ -69,7 +69,7 @@ body {
 
 .card {
   background: radial-gradient(circle at 50% 0%, hsl(213deg, 19%, 18%), #171c21);
-  border-radius: 14px;
+  border-radius: 2rem;
   max-width: 412px;
   box-shadow: 0px 5px 15px -5px #070709;
 }
@@ -196,6 +196,7 @@ body {
   }
 }
 .card__button {
+  border: none;
   width: 100%;
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
